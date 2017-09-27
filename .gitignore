@@ -6,7 +6,7 @@ target/
 *.iml
 *.ipr
 *.log
-
+*~
 
 ### STS ###
 .classpath
