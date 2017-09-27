@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.asce.oauth.controllers;
+package com.asce.oauth;
 
 
 import java.util.logging.Logger;
