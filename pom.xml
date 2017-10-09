@@ -29,6 +29,7 @@
         <javax.inject.version>1</javax.inject.version>
         <lombok.version>1.16.18</lombok.version>
         <jackson.version>2.8.8</jackson.version>
+        <lmax.version>3.3.6</lmax.version>
         
         <start-class>com.asce.oauth.Application</start-class>
         <main-class>com.asce.oauth.Application</main-class>
@@ -50,6 +51,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
                 <version>${spring.boot.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-logging</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>javax.inject</groupId>
@@ -68,6 +75,11 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>${lmax.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
